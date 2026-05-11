@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Utkal Rubber Products</title>
+  <meta name="description" content="Get in touch with Utkal Rubber Products. Contact us for enquiries, quotes, and customised rubber sealing solutions.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us - Utkal Rubber Products">
+  <meta property="og:description" content="Get in touch with Utkal Rubber Products for enquiries, quotes, and customised rubber sealing solutions.">
+  <meta property="og:image" content="image/logoU.png">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Preload contact.js for performance -->
+  <link rel="preload" href="contact.js" as="script">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION -->
+  <!-- ============================================ -->
+  <nav class="navbar-modern" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="image/logoU.png" alt="Utkal Rubber Products Logo">
+        <span>Utkal Rubber Products</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Product.html">Products</a></li>
+        <li><a href="Contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- PAGE HERO -->
+  <!-- ============================================ -->
+  <section class="page-hero">
+    <div class="section-container">
+      <h1 data-aos="fade-up">Contact Us</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Have a question or need a customised solution? We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTACT SECTION -->
+  <!-- ============================================ -->
+  <section class="section">
+    <div class="section-container">
+      <div class="contact-layout">
+        <!-- Contact Info -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <span class="section-tag" style="margin-bottom:1rem;display:inline-block;">Get in Touch</span>
+          <h2 style="font-size:1.75rem;font-weight:800;color:var(--neutral-900);margin-bottom:1rem;letter-spacing:-0.02em;">Let's Talk About Your Needs</h2>
+          <p style="color:var(--neutral-500);line-height:1.7;margin-bottom:2rem;">
+            Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.
+          </p>
+          
+          <div class="contact-info-grid">
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Our Address</h4>
+                <p>Room No. PXX 15. 5/6, Laxmi Nagar No.2, Near Laxmi Ind. Estate, Link Road, Goregaon (W), Mumbai-400 090.</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email Us</h4>
+                <p>
+                  <a href="mailto:aakashpanda81@gmail.com" style="color:inherit;">aakashpanda81@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4>Call Us</h4>
+                <p>
+                  <a href="tel:+918369653058" style="color:inherit;">+91 8369653058</a><br>
+                  <a href="tel:+919167270157" style="color:inherit;">+91 9167270157</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Business Hours</h4>
+                <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
+          <h3 style="font-size:1.25rem;font-weight:700;color:var(--neutral-900);margin-bottom:0.5rem;">Send Us a Message</h3>
+          <p style="font-size:0.875rem;color:var(--neutral-500);margin-bottom:1.5rem;line-height:1.6;">
+            Fill out the form below and we'll get back to you within 24 hours.
+          </p>
+          <form id="contactForm" novalidate>
+            <!-- Honeypot field - invisible to humans, catches bots -->
+            <div style="position:absolute;left:-9999px;" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">
+                  Your Name <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="name" name="name" class="form-input" 
+                  placeholder="John Doe" 
+                  required
+                  minlength="2"
+                  maxlength="100"
+                  autocomplete="name"
+                  data-error-required="Please enter your name.">
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  Email Address <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input type="email" id="email" name="email" class="form-input" 
+                  placeholder="john@example.com" 
+                  required
+                  autocomplete="email"
+                  data-error-required="Please enter your email address.">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" 
+                  placeholder="+91 98765 43210"
+                  autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" 
+                  placeholder="Product Enquiry"
+                  maxlength="200">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">
+                Your Message <span class="required-indicator" aria-hidden="true">*</span>
+              </label>
+              <textarea id="message" name="message" class="form-input" 
+                placeholder="Tell us about your requirements... (min. 10 characters)" 
+                required
+                minlength="10"
+                maxlength="5000"
+                data-error-required="Please enter your message."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              <span class="btn-text">Send Message</span>
+            </button>
+
+            <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MAP SECTION (Optional - Google Maps embed) -->
+  <!-- ============================================ -->
+  <section class="section section-alt section-map">
+    <div class="section-container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Find Us</span>
+        <h2>Our Location</h2>
+        <p>Visit our facility in Mumbai. We're conveniently located near Link Road, Goregaon West.</p>
+      </div>
+      <div class="map-container" data-aos="fade-up">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.747051706729!2d72.831962!3d19.104178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c1c1c1c1c1%3A0x1c1c1c1c1c1c1c1c!2sGoregaon+West%2C+Mumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1"
+          width="100%" 
+          height="400" 
+          style="border:0;border-radius:var(--radius-xl);" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Utkal Rubber Products Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CTA -->
+  <!-- ============================================ -->
+  <section class="section">
+    <div class="section-container">
+      <div class="cta-banner" data-aos="zoom-in">
+        <h2>Prefer to Call or Email?</h2>
+        <p>Our team is available Monday to Saturday, 9:00 AM to 6:00 PM to assist you with your enquiries.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;">
+          <a href="tel:+918369653058" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 2rem;border-radius:var(--radius-md);font-size:0.9375rem;">
+            <i class="fas fa-phone-alt"></i>
+            Call +91 8369653058
+          </a>
+          <a href="mailto:aakashpanda81@gmail.com" class="btn-secondary" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 2rem;border-radius:var(--radius-md);font-size:0.9375rem;">
+            <i class="fas fa-envelope"></i>
+            Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer-modern">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="image/logoU.png" alt="Utkal Rubber Products">
+        <h3>Utkal Rubber Products</h3>
+        <p>Excellence is to do a common thing in an uncommon way. Premium rubber moulding and sealing solutions since 1996.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="Product.html">Rubber U Seal</a></li>
+          <li><a href="Product.html">Rubber V Seal</a></li>
+          <li><a href="Product.html">PTFE Seal</a></li>
+          <li><a href="Product.html">Custom Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mumbai, MH 400104, India</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>aakashpanda81@gmail.com</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span>+91 8369653058 / 9167270157</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p>&copy; 2026 Utkal Rubber Products. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS -->
+  <!-- ============================================ -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+
+    // Mobile Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('open');
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+      hamburger.setAttribute('aria-expanded', expanded);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <!-- Contact form validation and submission script -->
+  <script src="contact.js" defer></script>
+</body>
+</html>
